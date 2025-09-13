@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //part 1 
+        console.log("%cpart 1", "color: green;")
+        console.log("%cVariables & Data Types", "color: red;")
+        let name = "ziad said"
+        let age = "20"
+        let isStudent = "true"
+        console.log(`My name is ${name}, I am ${age} years old and I am ${isStudent ? "a student" : "not a student"}`)
+        var num1 = 10
+        var num2 = 5
+        function addition() {
+            return num1 + num2
+        }
+        function subtraction() {
+            return num1 - num2
+        }
+        function multiplication() {
+            return num1 * num2
+        }
+        function division() {
+            return num1 / num2
+        }
+        console.log("the addition of num1 and num2 is " + addition())
+        console.log("the subtraction of num1 and num2 is " + subtraction())
+        console.log("the multiplication of num1 and num2 is " + multiplication())
+        console.log("the division of num1 and num2 is " + division())
+        //or like this
+        console.log("the addition of num1 and num2 is " + (num1 + num2));
+        console.log("the subtraction of num1 and num2 is " + (num1 - num2));
+        console.log("the multiplication of num1 and num2 is " + (num1 * num2));
+        console.log("the division of num1 and num2 is " + (num1 / num2));
+        //part 2
+        console.log("%cpart 2", "color: green;")
+        console.log("%cFor Loop", "color: red;")
+        for (let i = 0; i <= 10; i++) {
+            console.log(i)
+        }
+
+        console.log("%cWhile Loop", "color: red;")
+        let y = 2
+        while (y % 2 == 0 && y <= 20) {
+            console.log(y)
+            y += 2
+        }
+
+        console.log("%cLoop with Condition", "color: red;")
+        for (let i = 1; i < 31; i++) {
+            if (i % 5 == 0 && i % 3 == 0) {
+                console.log("fizzbuzz")
+            } else if (i % 5 == 0) {
+                console.log("buzz")
+            } else if (i % 3 == 0) {
+                console.log("fizz")
+            } else {
+                console.log(i)
+            }
+        }
+
+        //part 3
+        console.log("%cpart 3", "color: green;")
+        console.log("%cIf/Else Statement", "color: red;")
+        var score = 82 // مجموعي في ثانويه عامه 2024
+        if (score >= 90) {
+            console.log("Excellent")
+        } else if (score >= 70) {
+            console.log("Good")
+        } else if (score >= 50) {
+            console.log("Average")
+        } else {
+            console.log("Fail")
+        }
+        console.log("%cSwitch Statement", "color: red;")
+        var day = 3
+        switch (day) {
+            case 1:
+                console.log("the name of the day is Monday ")
+                break;
+            case 2:
+                console.log("the name of the day is Tuesday ")
+                break;
+            case 3:
+                console.log("the name of the day is Wednesday ")
+                break;
+            case 4:
+                console.log("the name of the day is Thursday ")
+                break;
+            case 5:
+                console.log("the name of the day is Friday ")
+                break;
+            case 6:
+                console.log("the name of the day is Saturday ")
+                break;
+            case 7:
+                console.log("the name of the day is Sunday ")
+                break;
+
+            default:
+                console.log("Invalid day")
+                break;
+        }
+        console.log("%cBonus Task", "color: red;");
+        var num = 12
+        if (num > 0) {
+            console.log("The Number Positive")
+            if (num % 2 == 0) {
+                console.log("The Number even")
+            } else {
+                console.log("The Number odd")
+            }
+        } else if (num < 0) {
+            console.log("The Number Negative")
+            if (num % 2 == 0) {
+                console.log("The Number even")
+            } else {
+                console.log("The Number odd")
+            }
+        } else {
+            console.log("The Number Zero")
+        }
+    </script>
+</body>
+
+</html>

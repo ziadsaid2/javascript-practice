@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //part 1 
+        console.log("%cPart 1: Functions", "color: green;")
+        console.log("%cBasic Function", "color: red;")
+        function greetUser(name) {
+            return console.log(`Hello, ${name}!`)
+        }
+        greetUser("ziad said")
+
+        console.log("%cFunction with Multiple Parameters", "color: red;")
+        function calculateArea(width, height) {
+            return console.log(`the area of a rectangle is (${width * height})`)
+        }
+        calculateArea(5, 10)
+        calculateArea(10, 7)
+
+        console.log("%c Function with Return Value", "color: red;")
+        function isEven(num) {
+            console.log(`the number is ( ${num} ) even ?`)
+            num % 2 == 0 ? console.log('true') : console.log('false');
+        }
+        isEven(2)
+        isEven(67)
+        isEven(8)
+
+        console.log("%cFunction with Conditional Logic", "color: red;")
+        function gradeStatus(score) {
+            if (score >= 90) {
+                console.log(`ur grade ${score} is Excellent`)
+            } else if (score >= 70) {
+                console.log(`ur grade ${score} is Good`)
+            } else if (score >= 50) {
+                console.log(`ur grade ${score} is Average`)
+            } else {
+                console.log(`ur grade ${score} is Fail`)
+            }
+        }
+        gradeStatus(95)
+        gradeStatus(82)
+        gradeStatus(65)
+        gradeStatus(45)
+
+        //part 2
+        console.log("%cPart 2: Objects", "color: green;")
+        console.log("%cCreating an Object", "color: red;")
+        const person = {
+            Name: "ziad said",
+            age: 20,
+            isStudent: true,
+            introduce: function () {
+                return `Hi, my name is ${this.Name}. I am ${this.age} years old and I live in ${this.city}.`
+            }
+
+        }
+        console.log("%cAccessing Object Properties", "color: red;")
+        console.log("Log the person's name using dot notation " + person.Name)
+        console.log("Log the person's age  using bracket notation " + person['age'])
+
+        console.log("%cAdding and Modifying Properties", "color: red;")
+        person.city = "alex"
+        person.age = 21
+        console.log(person)
+
+        console.log("%cObject with Method", "color: red;")
+        console.log(person.introduce())
+    </script>
+</body>
+
+</html>
